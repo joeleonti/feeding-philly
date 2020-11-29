@@ -1,0 +1,13 @@
+body {
+    color: white;
+}
+
+/* About Section Style */
+.about {
+    color: #fdc057;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
