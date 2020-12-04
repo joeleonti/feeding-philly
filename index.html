@@ -10,10 +10,41 @@
 
 <!-- Header and Navigation -->
 
-<!-- About Us Section -->
+<!-- Find Food Section -->
+<section class ="find-food">
+    <div class="flex-row">
+        <h2 class="section-title primary-border">Find Food</h2>
+    </div>
 
+    <!--Form for Searching by Zip Code -->
+    
+    <h3>Enter your zip code to find food resources closest to your location.</h3>
+
+    <div class="zipsearch">
+    <label>Zip Code</label><input type=“text” pattern=“[0-9]{5}” title=“Enter Five digit zip code” id="zip">
+    <input type="submit" value="Submit" id="submitbtn">
+    </div>
+
+    <table class="table table-striped">
+        <tr class="zipcodesearch">
+            <th>Program Type</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone Number</th>
+            <th>Hours</th>
+        </tr>
+
+        <tbody id="myZipCodeTable">
+
+        </tbody>
+    </table>
+    </div>
+
+</section>
+  
+<!-- About Us Section -->
 <section class="about-us">
-    <div class="flex-box">
+    <div class="flex-row">
         <h2 class="section-title primary-border">About Us</h2>
     </div>
 
@@ -25,7 +56,7 @@
                 <div class="container-1">
                     <img src="./assets/images/foodbankworker.png" alt="volunteer food bank worker" class="image">
                     <div class="overlay">
-                        <div class="text">Feeding Philly is a non-profit organization leading the movement to end hunger in the City of Brotherly Love. We have an extensive network of community and organizational partners across the state that distribute food to Philadelphians who need it. We supply the food to hundreds of food pantries, soup kitchens, shelters, and faith-based organizations.</div>
+                        <div class="text">Feeding Philly is a non-profit organization leading the movement to end hunger in the City of Brotherly Love. We supply the food to hundreds of food pantries, soup kitchens, shelters, and faith-based organizations.</div>
                         </div>
                 </div>
             </div>
@@ -36,7 +67,7 @@
                 <div class="container-2">
                     <img src="./assets/images/foodbankworkers.png" alt="volunteers working together" class="image">
                     <div class="overlay">
-                        <div class="text">Feeding people, strengthening communities, and ending hunger for more Philadelpians. We partner with critical service providers to offer food coupled with other services to help break the cycle of poverty and end hunger for good. We supplement this work with outreach programs that provide direct food assistance, educate the public on the importance of good nutrition, and fight hunger through innovative means.</div>
+                        <div class="text">Feeding people, strengthening communities, and ending hunger for more Philadelpians. We supplement this work with outreach programs that provide direct food assistance, educate the public on the importance of good nutrition.</div>
                     </div>
                 </div>
             </div>
@@ -47,7 +78,7 @@
                 <div class="container-3">
                     <img src="./assets/images/handingoutfood.png" alt="volunteers handing out food" class="image">
                     <div class="overlay">
-                        <div class="text">Today, we are serving more working families, more children, and more seniors. We need to offer solutions that help Philadelphia communities end hunger for good. In addition to sourcing and distributing more nutritious food, such as produce and proteins, we seek to understand and eradicate the root causes of hunger.</div>
+                        <div class="text">Today, we are serving more working families, more children, and more seniors. We need to offer solutions that help Philadelphia communities end hunger for good.</div>
                     </div>
                 </div>
             </div>
@@ -57,6 +88,7 @@
 </section>
 
 <!-- Footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
 </body>
