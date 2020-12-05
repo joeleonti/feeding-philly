@@ -21,23 +21,24 @@
     <h3>Enter your zip code to find food resources closest to your location.</h3>
 
     <div class="zipsearch">
-    <label>Zip Code</label><input type=“text” pattern=“[0-9]{5}” title=“Enter Five digit zip code” id="zip">
+    <label></label><input type=“text” pattern=“[0-9]{5}” title=“Enter Five digit zip code” id="zip" placeholder="Zip Code">
     <input type="submit" value="Submit" id="submitbtn">
     </div>
 
-    <table class="table table-striped">
-        <tr class="zipcodesearch">
-            <th>Program Type</th>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Phone Number</th>
-            <th>Hours</th>
-        </tr>
-
-        <tbody id="myZipCodeTable">
-
-        </tbody>
-    </table>
+    <div class="columns">
+        <div class="column is-8" id="searchandresults">
+            <table class="table" id="myTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Lat</th>
+                    <th>Long</th>
+                </tr>
+            </table>
+        </div>
+        <div class="column" id="googlemaps">
+        </div>
     </div>
 
 </section>
@@ -84,7 +85,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
 <!-- Footer -->
