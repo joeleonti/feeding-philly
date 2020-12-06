@@ -57,6 +57,14 @@ tr:nth-child(even) {
 }
 
 /* Style for Google Map */
+#map {
+    height: 100%;
+    text-align: center;
+    padding: 200px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+    
+}
 
 /* Style for Section Titles */
 h2.section-title.primary-border {

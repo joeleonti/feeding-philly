@@ -17,16 +17,17 @@
     </div>
 
     <!--Form for Searching by Zip Code -->
-    
     <h3>Enter your zip code to find food resources closest to your location.</h3>
 
+    <!-- Zip Code Search and Button -->
     <div class="zipsearch">
     <label></label><input type=“text” pattern=“[0-9]{5}” title=“Enter Five digit zip code” id="zip" placeholder="Zip Code">
     <input type="submit" value="Submit" id="submitbtn">
     </div>
 
+    <!-- Zip Code Search Results Displayed in Table -->
     <div class="columns">
-        <div class="column is-8" id="searchandresults">
+        <div class="column is-6" id="searchandresults">
             <table class="table" id="myTable">
                 <tr>
                     <th>Name</th>
@@ -37,8 +38,10 @@
                 </tr>
             </table>
         </div>
-        <div class="column" id="googlemaps">
-        </div>
+
+        <!-- div element for the map -->
+        <div class="column is-6" id="map"></div>
+
     </div>
 
 </section>
@@ -88,8 +91,10 @@
 </section>
 
 <!-- Footer -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhoZIWXelzy8uT2QTr4oGJB84Ny_MIv7s"></script>
 
 </body>
 </html>

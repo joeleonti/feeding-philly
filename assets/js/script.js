@@ -11,6 +11,7 @@
           type: "GET",
         }).done(function(data) {
           populateDataTable(data);
+        initMap(); 
         alert("Retrieved " + data.length + " records from the dataset!");
         console.log(data);
         });
@@ -28,7 +29,6 @@ function populateDataTable(data) {
   	var Table = document.querySelector('#myTable');
 	Table.innerHTML = `<tr><th>Name</th><th>Address</th><th>Phone Number</th><th>Lat</th><th>Long</th></tr>`;
     var table = document.getElementById("myTable");
-    console.log(table, "stop, start");
     for(var i=0; i<data.length; i++){
       var row = table.insertRow();
       var cell0 = row.insertCell(0);
@@ -46,16 +46,27 @@ function populateDataTable(data) {
   }
 }
 
-//google map
+//google map displaying results with a marker
+let map;
 
-// Local Storage Storing data:
-//myObj = {};
-//myJSON = JSON.stringify();
-//localStorage.setItem("");
-// Retrieving data:
-//text = localStorage.getItem("testJSON");
-//obj = JSON.parse(text);
-//document.getElementById("demo").innerHTML = obj.name;
+function initMap() {
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 11,
+    center: new google.maps.LatLng(39.952583, -75.165222),
+    mapTypeId: "terrain",
+    gestureHandling: "cooperative",
+  });
+}
 
-/* Need to clear data */
-
+//loop through the results array and place a marker for each
+//set of coordinates
+const eqfeed_callback = function (results) {
+ for (let i = 0; i < results.features.length; i++) {
+ const coords = results.features[i].geometry.coordinates;
+ const latLng = new google.maps.LatLng(coords[3], coords[4]);
+  new google.maps.Marker({
+  position: latLng,
+  map: map,
+  });
+ }
+};
