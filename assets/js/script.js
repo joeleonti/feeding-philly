@@ -1,3 +1,33 @@
+// Volunteer Modal option #1
+/*
+$("#lanuchModal").click(function() {
+  $(".modal").addClass("is-active");  
+});
+
+$(".modal-close").click(function() {
+   $(".modal").removeClass("is-active");
+});
+
+$("#closebtn").click(function() {
+   $(".modal").removeClass("is-active");
+});
+*/
+
+// Volunteer Modal #2 Currently Active
+
+$("#lanuchModal").click(function() {
+  $(".modal").addClass("is-active");  
+});
+
+$(".modal-close").click(function() {
+   $(".modal").removeClass("is-active");
+});
+
+$("#closebtn").click(function() {
+   $(".modal").removeClass("is-active");
+});
+
+
 //donate hero section
 $(document).ready(function(){
 
