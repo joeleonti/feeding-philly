@@ -115,11 +115,11 @@ tr:nth-child(even) {
 
 /* Style for Google Map */
 #map {
-    width: 700;
     height: 500;
+    width: 725;
     text-align: center;
     padding: 200px;
-    margin-right: 100px;
+    margin-right: 120px;
     margin-bottom: 40px; 
 }
 
