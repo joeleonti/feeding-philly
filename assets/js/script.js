@@ -129,27 +129,42 @@ function populateDataTable(data) {
   }
 }
 
-//google map displaying results with a marker
-let map;
-
+//create map and options
 function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 11,
-    center: new google.maps.LatLng(39.952583, -75.165222),
-    mapTypeId: "terrain",
-    gestureHandling: "cooperative",
-  });
+  var options = {
+    zoom: 12,
+    center: {lat:39.952583,lng:-75.165222}
+  }
+//create map object
+  var map = new 
+  google.maps.Map(document.getElementById("map"), options);
+
+//array of markers
+  var markers = [
+  {"cell4": "cell5"},];
+
+    //loop through markers
+    for(var i = 0;i < markers.length;i++){
+      //add marker
+      addMarkers(markers[i]);
+  }
+
+//call marker function
+  addMarker({lat:39.952583,lng:-75.165222});
+
+//add marker function
+  function addMarker(coords){
+    var marker = new google.maps.Marker({
+      position:coords,
+      map:map,
+    });
+  }
 }
 
-//loop through the results array and place a marker for each
-//set of coordinates
-const eqfeed_callback = function (results) {
- for (let i = 0; i < results.features.length; i++) {
- const coords = results.features[i].geometry.coordinates;
- const latLng = new google.maps.LatLng(coords[3], coords[4]);
-  new google.maps.Marker({
-  position: latLng,
-  map: map,
-  });
- }
-};
+/* $.getJSON('map_points.json', function(data) { 
+  $.each( data.points, function(i, value) {
+    var myLatlng =  new google.maps.LatLng(value.lat, value.lon);
+    alert(myLatlng);
+    var marker = new google.maps.Marker({
+    position: myLatlng,
+    map: map,*/
