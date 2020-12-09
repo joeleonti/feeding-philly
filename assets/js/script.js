@@ -25,12 +25,15 @@ $(".modal-close").click(function() {
 
 $("#closebtn").click(function() {
    $(".modal").removeClass("is-active");
-});
+   store();
+   });
 
 
 function store() {
   var inputEmail = document.getElementById("email");
+  var inputText = document.getElementById("text");
   localStorage.setItem("email", inputEmail.value);
+  localStorage.setItem("text", inputText.value);
 }
 
 
