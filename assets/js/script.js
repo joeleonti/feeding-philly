@@ -23,6 +23,11 @@ $(".modal-close").click(function() {
    $(".modal").removeClass("is-active");
 });
 
+$("closebtn").click(function() {
+  $(".modal").removeClass("is-active");
+});
+
+
 $("#closebtn").click(function() {
    $(".modal").removeClass("is-active");
    store();
