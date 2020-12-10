@@ -36,19 +36,28 @@
         </nav>
     </header>
 
-        <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-body">
-          <div class="container">
-                <div class="column" id="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NVoEae8sciU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="column column is-narrow has-text-centered" id="hungeramerica">
-                    <h6></h6>
+        <!-- Hunger Section -->
+    <section class="Hunger">
+            <div class="container">
+                <div class="columns">
+                    <!-- Feeding America Video -->
+                    <div class="column" id="hungerface">
+                        <div class="container-1">
+                            <div class="column" id="video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/NVoEae8sciU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column" id="hungerfacetext">
+                        <!-- Feeding America Text -->
+                        <div class="container-2">
+                            <div class="column" id="videotext">
+                                <div class="hungertext">PICTURE SOMEONE STRUGGLING WITH HUNGER. WHAT DO THEY LOOK LIKE? DO YOU IMAGINE A CERTAIN AGE, ETHNICITY OR PART OF THE COUNTRY? TRUTH IS. <strong>HUNGER CAN BE HARD TO RECOGNIZE.</strong> BECAUSE THE 1 IN 8 AMERICANS FACING IT CAN LOOK LIKE ANYONE. ESPECIALLY ME. I WAS CREATED BY ARTIFICIAL INTELLIGENCE FROM PHOTOS OF THE 40 MILLION POEPLE STRUGGLING WITH UNGER IN THE UNITED STATES. A FACE THAT CHALLENGES YOU TO SEE HUNGER IN A DIFFERENT LIGHT. I AM WHAT HUNGERT LOOKS LIKE IN AMERICA. - FEEDING AMERICA.ORG</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>
-        </div>
       </section>
 
     <!-- Find Food Section-->
@@ -144,9 +153,7 @@
                     <div class="container-1">
                         <img src="./assets/images/foodbankworker.png" alt="volunteer food bank worker" class="image">
                         <div class="overlay">
-                            <div class="text">Feeding Philly is a non-profit organization leading the movement to end
-                                hunger in the City of Brotherly Love. We supply the food to hundreds of food pantries,
-                                soup kitchens, shelters, and faith-based organizations.</div>
+                            <div class="text">Due to the effects of the Covid-19 panademic, more people are experiencing food insecurity. Food Banks are providing food to individuals, families, and seniors. Our goal is to help you find food, volunteer, or make a charitable donation.</div>
                         </div>
                     </div>
                 </div>
@@ -157,9 +164,7 @@
                     <div class="container-2">
                         <img src="./assets/images/foodbankworkers.png" alt="volunteers working together" class="image">
                         <div class="overlay">
-                            <div class="text">Feeding people, strengthening communities, and ending hunger for more
-                                Philadelpians. We supplement this work with outreach programs that provide direct food
-                                assistance, educate the public on the importance of good nutrition.</div>
+                            <div class="text">Assist individuals in finding food, whether it's groceries for the week, or a hot meal. We would like to strengthen our community by connecting individuals looking to volunteer with a local hunger relief organization, and individuals with resources to make a financial contributon.</div>
                         </div>
                     </div>
                 </div>
@@ -170,9 +175,7 @@
                     <div class="container-3">
                         <img src="./assets/images/handingoutfood.png" alt="volunteers handing out food" class="image">
                         <div class="overlay">
-                            <div class="text">Today, we are serving more working families, more children, and more
-                                seniors. We need to offer solutions that help Philadelphia communities end hunger for
-                                good.</div>
+                            <div class="text">Philadelphia is one of the many cities across America that has been hit hard with food insecurity. We will connect you with a local food bank, soup kitchen, or organizations that can assist you. Let's work together to help provide hunger relief.</div>
                         </div>
                     </div>
                 </div>
@@ -188,7 +191,6 @@
     <!-- Volunteer Modal -->
         <div class="columns">
             <div class="column is-4" id="do">
-                <h4>Help to Solve Hunger Today</h4>
                 <div class="columns is-gapless">
                     <div class="column" id="do">
                         <div id="modal" class="modal">
@@ -238,17 +240,17 @@
             </div>
 
     <!-- Links to Hunger Help Sites in America -->
-            <div class="column is-6">
-                <h4>Links to Food Agencies</h4>
-                        <a href="https://www.feedingamerica.org/" target="_blank">
+            <div class="column is-6" id="agencies">
+                <h4>Links to Food Agencies:</h4>
+                        <a href="https://www.feedingamerica.org/" target="_blank" id="feedamerica">
                             <img src="./assets/images/feeding-america.png" target="_blank" style="width:6em; height: 3em;" alt="feedingamerica"/>
                         </a>
                     
-                        <a href="http://www.hungercoalition.org/" target="_blank">
+                        <a href="http://www.hungercoalition.org/" target="_blank" id="coalitionhunger">
                             <img src="./assets/images/coalition-hunger.png" style="width:6em; height: 3em;" alt="hungercoalition"/>
                         </a>
 
-                        <a href="https://www.philabundance.org/" target="_blank">
+                        <a href="https://www.philabundance.org/" target="_blank" id="philabundance">
                             <img src="./assets/images/philabundance.png" style="width:11em; height: 5.5em;" alt="philabundance"/>
                         </a>
             </div>
@@ -256,7 +258,7 @@
     <!-- Footer -->
     <footer class="find-food" id="food">
         <div class="flex-row">
-            <h8 class="section-title primary-border">Created by Michele, Joe, and Tony</h8>
+            <h8 class="section-title primary-border">Created by Michele and Joe</h8>
         </div>
     </footer>
     

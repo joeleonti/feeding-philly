@@ -73,7 +73,7 @@ $("#submitbtn").click(function(){
 function populateDataTable(data) {
   if(data.length > 0){
   	var Table = document.querySelector('#myTable');
-	Table.innerHTML = `<tr><th>Name</th><th>Address</th><th>Phone Number</th><th>Hours</th><th>Lat</th><th>Long</th></tr>`;
+	Table.innerHTML = `<tr><th>Name</th><th>Address</th><th>Phone Number</th><th>Hours</th></tr>`;
     var table = document.getElementById("myTable");
     for(var i=0; i<data.length; i++){
       var row = table.insertRow();
@@ -96,7 +96,7 @@ function populateDataTable(data) {
 //create map and options
 function initMap(data) {
   var options = {
-    zoom: 12,
+    zoom: 13,
     center: {lat:parseFloat(data[0]["lat"]), lng:parseFloat(data[0]["lng"])}
   }
   
