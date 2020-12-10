@@ -55,9 +55,24 @@ header nav ul li a:hover{
     text-shadow: none;
 }
 
-/* Style for Hero */
+/* Style for Video */
+#video {
+    background-color: #ef3124;
+    align-items: center;
+    margin-top: 2px;
+    padding: 10px;
+    border-width: .25em;
+    border-style: double;
+    border-color: #fdc057;
+}
 
-/* Style for Newsletter Modal */
+/* Style for Images */
+.img {
+    height: 20px;
+    width: 20px;
+
+}
+
 
 /* Style for Zip Code Search */
 .zipsearch {
@@ -115,11 +130,11 @@ tr:nth-child(even) {
 
 /* Style for Google Map */
 #map {
-    width: 700;
     height: 500;
+    width: 725;
     text-align: center;
     padding: 200px;
-    margin-right: 100px;
+    margin-right: 120px;
     margin-bottom: 40px; 
 }
 
@@ -224,7 +239,7 @@ h2.section-title.primary-border {
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 1px 3px #fdc057;
-    margin-top: 60px;
+    margin-top: 40px;
     padding: 30px;
     border-width: .25em;
     border-style: double;
@@ -298,3 +313,66 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: #fdc057;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px #fdc057;
+    text-align: center;
+    padding: 10px;
+}
+
+h5 {
+    color: #ef3124;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#do.column {
+    padding: 10px;
+    
+    margin-left: 90px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.button.is-warning {
+    background-color: #fdc057;
+    color: #ef3124;
+}
+/* Style Footer Section */
+footer {
+    padding: 20px 35px;
+    background-color: #fdc057;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: 80%;
+    border-width: .50em;
+    border-style: double;
+    border-color: #ef3124;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+
+h8.section-title.primary-border {
+    color: #ef3124;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 60px;
+    padding: 30px;
+  
+}
+
+a {
+    color: #ef3124;
+    font-weight: bold;
+}

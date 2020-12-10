@@ -15,8 +15,6 @@
         <h1>
             <a>Feeding Philly</a>
         </h1>
-
-
         <nav>
             <!-- Unordered List Element -->
             <ul>
@@ -28,12 +26,6 @@
                 <li>
                     <a href="#hungerstats">Hunger Statistics</a>
                 </li>
-
-
-
-
-
-
                 <li>
                     <a href="#us">About Us</a>
                 </li>
@@ -44,10 +36,20 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-
-    <!-- Newsletter Modal -->
-    <!-- Links to Hunger Help Sites in America -->
+        <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+                <div class="column" id="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NVoEae8sciU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="column column is-narrow has-text-centered" id="hungeramerica">
+                    <h6></h6>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- Find Food Section-->
     <section class="find-food" id="food">
@@ -173,7 +175,15 @@
                                 good.</div>
                         </div>
                     </div>
+
+                    
+
                 </div>
+
+                
+
+
+
             </div>
         </div>
     </section>
@@ -183,93 +193,86 @@
         <div class="flex-row">
             <h2 class="section-title primary-border">What You Can Do</h2>
         </div>
-
-        <div class="columns is-gapless">
-            <div class="column" id="do">
-                
-
-                <div id="modal" class="modal">
-
-                    <div class="modal-background"></div>
-
-                    <div class="modal-content">
-
-                        <div class="box">
-
-                            <article class="media">
-
-                                <div class="media-left">
-
-                                    <figure class="image is-64x64">
-
-                                        <img src="https://bulma.io/images/placeholders/128x128.png" alt="Image">
-
-                                    </figure>
-
-                                </div>
-
-                                <div class="media-content">
-
-                                    <div class="content">
-
-                                        <p>
-
-                                            <strong>Volunteer Information</strong>
-
-                                            <br>
-
-                                        <div class="field">
-                                            <label class="label">Name</label>
-                                            <div class="control">
-                                                <input class="input" id="text" placeholder="e.g Alex Smith">
-                                            </div>
+    <!-- Volunteer Modal -->
+        <div class="columns">
+            <div class="column is-4" id="do">
+                <h4>Help to Solve Hunger Today</h4>
+                <div class="columns is-gapless">
+                    <div class="column" id="do">
+                        <div id="modal" class="modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="box">
+                                    <article class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-64x64">
+                                                <img src="./assets/images/volunteer-icon.png" alt="volunteer-icon">
+                                            </figure>
                                         </div>
-
-                                        <div class="field">
-                                            <label class="label">Email</label>
-                                            <div class="control">
-                                                <input class="input" id="email" placeholder="e.g. alexsmith@gmail.com">
-                                            </div>
-                                        </div>
-
-                                        </p>
-
-                                    </div>
-
-                                    <button class="button is-success is-small" id="closebtn">Submit</button>
-
-
-                                </div>
-
-                            </article>
-
-                        </div>
-
-                    </div>
-
-                    <button class="modal-close is-large" aria-label="close"></button>
-
-                </div>
-
-                <button class="button is-warning is-large" id="lanuchModal"><strong>Volunteer</strong></button>
-
-
-
-            </div>
-        </div>
         
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <strong>Volunteer Information</strong>
+                                                    <br>
+        
+                                                <div class="field">
+                                                    <label class="label">Name</label>
+                                                    <div class="control">
+                                                        <input class="input" id="text" placeholder="e.g Alex Smith">
+                                                    </div>
+                                                </div>
+        
+                                                <div class="field">
+                                                    <label class="label">Email</label>
+                                                    <div class="control">
+                                                        <input class="input" id="email" placeholder="e.g. alexsmith@gmail.com">
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+                                            
+                                            <button class="button is-danger is-small" id="closebtn">Cancel</button>
+                                            
+                                            <button class="button is-success is-small" id="closebtn">Submit</button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+        
+                        <button class="button is-warning is-large" id="lanuchModal"><strong>Volunteer</strong></button>
+                    </div>
+                </div>
+            </div>
 
-        <!-- Donate Modal -->
+    <!-- Links to Hunger Help Sites in America -->
+            <div class="column is-6">
+                <h4>Links to Food Agencies</h4>
+                        <a href="https://www.feedingamerica.org/" target="_blank">
+                            <img src="./assets/images/feeding-america.png" target="_blank" style="width:6em; height: 3em;" alt="feedingamerica"/>
+                        </a>
+                    
+                        <a href="http://www.hungercoalition.org/" target="_blank">
+                            <img src="./assets/images/coalition-hunger.png" style="width:6em; height: 3em;" alt="hungercoalition"/>
+                        </a>
 
-        <!-- Volunteer Modal -->
-
-
-
-
+                        <a href="https://www.philabundance.org/" target="_blank">
+                            <img src="./assets/images/philabundance.png" style="width:11em; height: 5.5em;" alt="philabundance"/>
+                        </a>
+            </div>
+    </section>
+    <!-- Footer -->
+    <footer class="find-food" id="food">
+        <div class="flex-row">
+            <h8 class="section-title primary-border">Created by Michele, Joe, and Tony</h8>
+        </div>
+    </footer>
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="./assets/js/script.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhoZIWXelzy8uT2QTr4oGJB84Ny_MIv7s"></script>
-
 </body>
 
 </html>

@@ -1,20 +1,4 @@
-// Volunteer Modal option #1
-/*
-$("#lanuchModal").click(function() {
-  $(".modal").addClass("is-active");  
-});
-
-$(".modal-close").click(function() {
-   $(".modal").removeClass("is-active");
-});
-
-$("#closebtn").click(function() {
-   $(".modal").removeClass("is-active");
-});
-*/
-
-// Volunteer Modal #2 Currently Active
-
+// Volunteer Modal
 $("#lanuchModal").click(function() {
   $(".modal").addClass("is-active");  
 });
@@ -28,68 +12,12 @@ $("#closebtn").click(function() {
    store();
    });
 
-
 function store() {
   var inputEmail = document.getElementById("email");
   var inputText = document.getElementById("text");
   localStorage.setItem("email", inputEmail.value);
   localStorage.setItem("text", inputText.value);
 }
-
-
-
-
-//donate hero section
-$(document).ready(function(){
-
-  $('#searchbar').focus();
-
-  $('#donate-buttons').on('click', '.btn-blue', function(e) {
-    e.preventDefault();
-    $('.active').removeClass('active');
-    $('#other-input').hide().siblings('#other').show();
-    $(this).filter('.btn-blue').addClass("active");
-    var value = $(this).data('impact');
-    $(this).closest('div').find('p').text("" + value);
-    $('#other-input').find('input').val('');  
-  });
-    
-  $('.btn-green').on('click', function() {
-    var dollar;
-    var input = $('#other-input').find('input').val();
-    if ( !input ) {
-      dollar = $('.active').data('dollars');
-     } else if ( $.trim(input) === '' || isNaN(input)) {
-      // empty space leaves value = 'undefined'. 
-      // Have to fix $.trim(input) == '' above so that it works.
-      console.log('Yes');
-      dollar = "Please enter a number."; 
-    } else {
-      dollar = input;
-    }
-    $('#price').text(""+dollar);
-  });
-
-  $('#other').on('click', function(e) {
-    e.preventDefault(); 
-    var buttons = $(this).parent('#donate-buttons');
-    buttons.find('.active').removeClass('active');
-    var other = $(this).hide().siblings('#other-input');
-    other.show();
-    other.find('input').focus();
-    var pText = buttons.siblings('p');
-    pText.text("Thank you!");
-    var oValue = other.find('input');
-    oValue.keyup(function() {
-      if ( oValue.val() > 50 ) {
-        pText.text("Thank you!" + " You\'re donation covers housing and counseling services for " + oValue.val()/25 + " people.");
-      } else {
-        pText.text("Thank you!");
-      }
-    });
-  }); 
-
-});
 
 //Hunger Statistics Slider
 var slideIndex = 1;
@@ -123,10 +51,7 @@ function showSlides(n) {
 
 //document.addEventListener('click', function()
   $("#submitbtn").click(function(){
-    console.log("buttonWasClicked");
   //$("#zip")
-    console.log($("#zip").val());
-
     var zipCode = $("#zip").val();
       if (zipCode != undefined) {
         $.ajax({
@@ -134,9 +59,7 @@ function showSlides(n) {
           type: "GET",
         }).done(function(data) {
           populateDataTable(data);
-        initMap(); 
-        alert("Retrieved " + data.length + " records from the dataset!");
-        console.log(data);
+        initMap(data); 
         });
       }
   })
@@ -170,27 +93,30 @@ function populateDataTable(data) {
   }
 }
 
-//google map displaying results with a marker
-let map;
+//create map and options
+function initMap(data) {
+  var options = {
+    zoom: 12,
+    center: {lat:parseFloat(data[0]["lat"]), lng:parseFloat(data[0]["lng"])}
+  }
+  
+//create map object
+  var map = new
+  google.maps.Map(document.getElementById("map"), options);
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 11,
-    center: new google.maps.LatLng(39.952583, -75.165222),
-    mapTypeId: "terrain",
-    gestureHandling: "cooperative",
-  });
+//define marker
+    for(var i = 0;i < data.length;i++){
+      var marker = new google.maps.Marker({
+        position:{lat:parseFloat(data[i]["lat"]), lng:parseFloat(data[i]["lng"])},
+        map:map
+      });
+    }
 }
 
-//loop through the results array and place a marker for each
-//set of coordinates
-const eqfeed_callback = function (results) {
- for (let i = 0; i < results.features.length; i++) {
- const coords = results.features[i].geometry.coordinates;
- const latLng = new google.maps.LatLng(coords[3], coords[4]);
-  new google.maps.Marker({
-  position: latLng,
-  map: map,
+//add marker function
+function addMarker(coords){
+  var marker = new google.maps.Marker({
+    position:coords,
+    map:map,
   });
- }
-};
+}
