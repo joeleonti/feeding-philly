@@ -54,7 +54,7 @@ Once a zip code is entered and the submit button is clicked a GoogleMap will gen
 Displaying the closest locations.
 
 
-![image](https://user-images.githubusercontent.com/72576930/101828282-5316b280-3aff-11eb-8c83-6862ea3cd472.png)
+![image](https://user-images.githubusercontent.com/72576930/101840767-ba8a2d80-3b12-11eb-869b-824f2d540c68.png)
 
 # Hunger Statistics
 
@@ -77,7 +77,7 @@ When the user hovers on one of the **About Us** sections it will display informa
 
 This section gives the user several options in which they can help. We provide links to food agencies where more information can be gathered and a volunteer tab.
 
-![image](https://user-images.githubusercontent.com/72576930/101828999-58283180-3b00-11eb-9201-4a88c90b1254.png)
+![image](https://user-images.githubusercontent.com/72576930/101840606-6aab6680-3b12-11eb-9b28-439162657f20.png)
 
 Once the user clicks on the **Volunteer Tab** they will be able to enter their name and email address(future app will include complete form). The user can either submit their information or if they are not ready to they can click cancel and close the tab.
 
