@@ -37,7 +37,7 @@ https://github.com/joeleonti/feeding-philly
 
 We provide a simple and clean landing page with navigation options that will take the user to the chosen section when clicked. Also upon landing there is a brief introduction video detailing what hunger looks like.
 
-![image](https://user-images.githubusercontent.com/72576930/101840406-07b9cf80-3b12-11eb-886f-9b9d0d5c4184.png)
+![image](https://user-images.githubusercontent.com/72576930/101843188-ac8adb80-3b17-11eb-9acc-c49e8c17cb9b.png)
 
 # Find Food
 
