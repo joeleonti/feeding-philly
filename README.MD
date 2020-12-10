@@ -2,7 +2,9 @@
 
 #### The Feeding Philly app is designed to help individuals find locations that provide food and also help individuals looking to give their time and/or resources to those in need.
 
+# User Story
 
+As a resident of Philadelphia, I want to have one central location to find food. It will provide me a way to search for local food banks  to obtain food, a soup kitchen for a hot meal, locate agencies looking for volunteers, and the ability to see local and national food insecurity organizations. I also want the ability to donate my time and resources to those that are in need.
 
 # Project Requirements
 * Use a CSS framework other than Bootstrap.
@@ -76,12 +78,20 @@ Once the user clicks on the **Volunteer Tab** they will be able to enter their n
 ![image](https://user-images.githubusercontent.com/72576930/101829072-6e35f200-3b00-11eb-888f-9ba8035e7e4a.png)
 
 
+# Technologies Used to Develop Application
+
+We used the following technologies for the design, coding, and interface of our web application: 
+
+
+
+
+
 
 
 
 MIT License
 
-Copyright (c) [2020 [fullname]
+Copyright (c) 2020 Feeding Philly
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
