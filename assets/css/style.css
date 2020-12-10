@@ -59,20 +59,37 @@ header nav ul li a:hover{
 #video {
     background-color: #ef3124;
     align-items: center;
-    margin-top: 2px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     padding: 10px;
     border-width: .25em;
     border-style: double;
     border-color: #fdc057;
 }
 
-/* Style for Images */
-.img {
-    height: 20px;
-    width: 20px;
-
+#video.column {
+    margin-left: 10px;
+    margin-right: 60px;
 }
 
+#hungerfacetext.column {
+    width: 588;
+    height: 343;
+    background-color: #ef3124;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-width: .25em;
+    border-style: double;
+    border-color: #fdc057;
+}
+
+.hungertext {
+    color: #fdc057;
+    text-align: center;
+
+}
 
 /* Style for Zip Code Search */
 .zipsearch {
@@ -127,6 +144,15 @@ tr:nth-child(even) {
     background-color: #fdc057;
     background-blend-mode: lighten;
 }
+
+td:nth-of-type(5) {
+    display: none;
+}
+    
+td:nth-of-type(6) {
+    display: none;
+        }
+        
 
 /* Style for Google Map */
 #map {
@@ -341,9 +367,24 @@ h5 {
     background-color: #fdc057;
     color: #ef3124;
 }
+
+#do {
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+/* Style for Links */
+#agencies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
 /* Style Footer Section */
 footer {
     padding: 20px 35px;
+    margin-top: 20px;
     background-color: #fdc057;
     display: flex;
     text-align: center;
