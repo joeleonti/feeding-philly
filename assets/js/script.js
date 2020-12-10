@@ -1,3 +1,24 @@
+// Volunteer Modal
+$("#lanuchModal").click(function() {
+  $(".modal").addClass("is-active");  
+});
+
+$(".modal-close").click(function() {
+   $(".modal").removeClass("is-active");
+});
+
+$("#closebtn").click(function() {
+   $(".modal").removeClass("is-active");
+   store();
+   });
+
+function store() {
+  var inputEmail = document.getElementById("email");
+  var inputText = document.getElementById("text");
+  localStorage.setItem("email", inputEmail.value);
+  localStorage.setItem("text", inputText.value);
+}
+
 //Hunger Statistics Slider
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -28,13 +49,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
 //document.addEventListener('click', function()
   $("#submitbtn").click(function(){
-    console.log("buttonWasClicked");
   //$("#zip")
-    console.log($("#zip").val());
-
     var zipCode = $("#zip").val();
       if (zipCode != undefined) {
         $.ajax({
@@ -43,8 +60,6 @@ function showSlides(n) {
         }).done(function(data) {
           populateDataTable(data);
         initMap(data); 
-        alert("Retrieved " + data.length + " records from the dataset!");
-        console.log(data);
         });
       }
   })
@@ -105,11 +120,3 @@ function addMarker(coords){
     map:map,
   });
 }
-
-/* $.getJSON('map_points.json', function(data) { 
-  $.each( data.points, function(i, value) {
-    var myLatlng =  new google.maps.LatLng(value.lat, value.lon);
-    alert(myLatlng);
-    var marker = new google.maps.Marker({
-    position: myLatlng,
-    map: map,*/

@@ -55,15 +55,24 @@ header nav ul li a:hover{
     text-shadow: none;
 }
 
-#image {
-    background-image: url(../images/helpingeachother.png);
-    width: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 40px;
-    padding: 400px;
+/* Style for Video */
+#video {
+    background-color: #ef3124;
+    align-items: center;
+    margin-top: 2px;
+    padding: 10px;
+    border-width: .25em;
+    border-style: double;
+    border-color: #fdc057;
 }
+
+/* Style for Images */
+.img {
+    height: 20px;
+    width: 20px;
+
+}
+
 
 /* Style for Zip Code Search */
 .zipsearch {
@@ -230,7 +239,7 @@ h2.section-title.primary-border {
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 1px 3px #fdc057;
-    margin-top: 60px;
+    margin-top: 40px;
     padding: 30px;
     border-width: .25em;
     border-style: double;
@@ -320,6 +329,18 @@ h5 {
     margin-bottom: 30px;
 }
 
+#do.column {
+    padding: 10px;
+    
+    margin-left: 90px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.button.is-warning {
+    background-color: #fdc057;
+    color: #ef3124;
+}
 /* Style Footer Section */
 footer {
     padding: 20px 35px;
@@ -352,5 +373,6 @@ h8.section-title.primary-border {
 }
 
 a {
-    color: ef3124;
+    color: #ef3124;
+    font-weight: bold;
 }

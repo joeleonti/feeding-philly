@@ -40,8 +40,11 @@
     <section class="hero">
         <div class="hero-body">
           <div class="container">
-            <div class="columns">
-                <div class="column" id="image">
+                <div class="column" id="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NVoEae8sciU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="column column is-narrow has-text-centered" id="hungeramerica">
+                    <h6></h6>
                 </div>
             </div>
           </div>
@@ -184,27 +187,76 @@
         </div>
     <!-- Volunteer Modal -->
         <div class="columns">
-            <div class="column is-6" id="do">
+            <div class="column is-4" id="do">
+                <h4>Help to Solve Hunger Today</h4>
+                <div class="columns is-gapless">
+                    <div class="column" id="do">
+                        <div id="modal" class="modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+                                <div class="box">
+                                    <article class="media">
+                                        <div class="media-left">
+                                            <figure class="image is-64x64">
+                                                <img src="./assets/images/volunteer-icon.png" alt="volunteer-icon">
+                                            </figure>
+                                        </div>
+        
+                                        <div class="media-content">
+                                            <div class="content">
+                                                <p>
+                                                    <strong>Volunteer Information</strong>
+                                                    <br>
+        
+                                                <div class="field">
+                                                    <label class="label">Name</label>
+                                                    <div class="control">
+                                                        <input class="input" id="text" placeholder="e.g Alex Smith">
+                                                    </div>
+                                                </div>
+        
+                                                <div class="field">
+                                                    <label class="label">Email</label>
+                                                    <div class="control">
+                                                        <input class="input" id="email" placeholder="e.g. alexsmith@gmail.com">
+                                                    </div>
+                                                </div>
+                                                </p>
+                                            </div>
+        
+                                            <button class="button is-success is-small" id="closebtn">Submit</button>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+        
+                        <button class="button is-warning is-large" id="lanuchModal"><strong>Volunteer</strong></button>
+                    </div>
+                </div>
             </div>
 
     <!-- Links to Hunger Help Sites in America -->
             <div class="column is-6">
-                <h4>Links to local food insecurity agencies</h4>
-                    <h5>
-                        <a href="https://www.feedingamerica.org/">Feeding America</a>
-                    </h5>
-                    <h5>
-                        <a href="http://www.hungercoalition.org/">Hunger Coalition</a>
-                    </h5>
-                    <h5>
-                        <a href="https://www.philabundance.org/">Philabundance</a>
-                    </h5>
+                <h4>Links to Food Agencies</h4>
+                        <a href="https://www.feedingamerica.org/" target="_blank">
+                            <img src="./assets/images/feeding-america.png" target="_blank" style="width:6em; height: 3em;" alt="feedingamerica"/>
+                        </a>
+                    
+                        <a href="http://www.hungercoalition.org/" target="_blank">
+                            <img src="./assets/images/coalition-hunger.png" style="width:6em; height: 3em;" alt="hungercoalition"/>
+                        </a>
+
+                        <a href="https://www.philabundance.org/" target="_blank">
+                            <img src="./assets/images/philabundance.png" style="width:11em; height: 5.5em;" alt="philabundance"/>
+                        </a>
             </div>
     </section>
     <!-- Footer -->
     <footer class="find-food" id="food">
         <div class="flex-row">
-            <h8 class="section-title primary-border">Created by Joe, Michele, and Tony</h8>
+            <h8 class="section-title primary-border">Created by Michele, Joe, and Tony</h8>
         </div>
     </footer>
     
