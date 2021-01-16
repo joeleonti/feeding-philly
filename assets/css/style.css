@@ -55,37 +55,13 @@ header nav ul li a:hover{
     text-shadow: none;
 }
 
-/* Style for Video */
-#video {
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 10px;
-    overflow: hidden;
-}
-
-#video.column {
-    margin-left: 10px;
-    margin-right: 60px;
-}
-
-#hungerfacetext.column {
-    width: 588;
-    height: 343;
-    font-weight: bold;
-    align-items: center;
-    margin-top: 24px;
-    margin-bottom: 5px;
-    padding: 10px;
-}
-
+/* Style for Hunger Text */
 .hungertext {
     color: #fdc057;
-    font-size: 16px vw;
-    text-align: center;
+    font-weight: bold;
+
 
 }
-
 /* Style for Zip Code Search */
 .zipsearch {
     color: #ef3124;
@@ -148,7 +124,6 @@ td:nth-of-type(6) {
     display: none;
 }
         
-
 /* Style for Google Map */
 #map {
     height: 500;
